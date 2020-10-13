@@ -10,7 +10,9 @@ public class Course
     private String title;
     private String codeNo;
     
-    
+    /**
+     * 
+     */
     public Course()
     {
         
