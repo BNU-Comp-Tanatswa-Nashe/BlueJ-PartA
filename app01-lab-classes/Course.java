@@ -13,9 +13,10 @@ public class Course
     /**
      * 
      */
-    public Course()
+    public Course(String title, String codeNo)
     {
-        
+        this.title = title;
+        this.codeNo = codeNo;
     }
     
 }
