@@ -1,9 +1,12 @@
 
 /**
- * Write a description of class Student here.
+ * The student class represents a student in a student administration system. 
+ * It holds the student details such as name, id and credits 
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Michael Kolling and David Barnes 
+ * @version 2016.02.29
+ * 
+ * Modified by Tanatswa-Nashe Rusike
  */
 public class Student
 {
