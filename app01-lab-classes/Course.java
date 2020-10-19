@@ -22,7 +22,9 @@ public class Course
         this.codeNo = codeNo;
     }
     
-    
+    /**
+     * This will print out the title and the codeNo.
+     */
     public void print()
     {
           System.out.println("Course: " + title + " " + codeNo);
