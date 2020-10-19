@@ -1,0 +1,60 @@
+LabClass co452 = new LabClass(3);
+Student studentDavid = new Student("David", "4567");
+Student studentShami = new Student("Shami", "8967");
+Student studentTaro = new Student("Taro", "2468");
+studentDavid.addCredits(20);
+studentShami.addCredits(20);
+studentTaro.addCredits(20);
+studentDavid.print();
+David, student ID: 4567, credits: 20
+studentShami.print();
+Shami, student ID: 8967, credits: 20
+studentTaro.print();
+Taro, student ID: 2468, credits: 20
+co452.enrollStudent(studentDavid);
+co452.enrollStudent(studentShami);
+co452.enrollStudent(studentTaro);
+co452.printList();
+Lab class unknown
+Instructor: unknown   Room: unknown
+Class list:
+David, student ID: 4567, credits: 20
+Shami, student ID: 8967, credits: 20
+Taro, student ID: 2468, credits: 20
+Number of students: 3
+co452.setInstructor("Nicholas Day");
+co452.printList();
+Lab class unknown
+Instructor: Nicholas Day   Room: unknown
+Class list:
+David, student ID: 4567, credits: 20
+Shami, student ID: 8967, credits: 20
+Taro, student ID: 2468, credits: 20
+Number of students: 3
+co452.setRoom("G100");
+co452.printList();
+Lab class unknown
+Instructor: Nicholas Day   Room: G100
+Class list:
+David, student ID: 4567, credits: 20
+Shami, student ID: 8967, credits: 20
+Taro, student ID: 2468, credits: 20
+Number of students: 3
+co452.setTime("SeptemberTuesday");
+co452.printList();
+Lab class SeptemberTuesday
+Instructor: Nicholas Day   Room: G100
+Class list:
+David, student ID: 4567, credits: 20
+Shami, student ID: 8967, credits: 20
+Taro, student ID: 2468, credits: 20
+Number of students: 3
+co452.setTime("Tuesday, 10am");
+co452.printList();
+Lab class Tuesday, 10am
+Instructor: Nicholas Day   Room: G100
+Class list:
+David, student ID: 4567, credits: 20
+Shami, student ID: 8967, credits: 20
+Taro, student ID: 2468, credits: 20
+Number of students: 3
