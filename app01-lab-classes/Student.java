@@ -83,12 +83,12 @@ public class Student
     
     /**
      * This method will add a course to the student and that 
-     * is the course the student is enrolled on.
+     * is the course the student will enrolled on.
      */
-    public void enrolOnCourse()
-    (
-    
-    )
+    public void enrolOnCourse(Course course)
+    {
+     this.course = course;   
+    }
     
     /**
      * Print the student's name and ID number to the output terminal.

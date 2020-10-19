@@ -22,4 +22,11 @@ public class Course
         this.codeNo = codeNo;
     }
     
+    
+    public void print()
+    {
+          System.out.println("Course: " + title + " " + codeNo);
+    }
+    
+  
 }
