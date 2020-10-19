@@ -1,5 +1,0 @@
-Student student1 = new Student("Kelly", "6478");
-student1.print();
-Kelly, student ID: 6478, credits: 0
-LabClass labClass1 = new LabClass(3);
-labClass1.enrollStudent(student1);
