@@ -82,6 +82,15 @@ public class Student
     }
     
     /**
+     * This method will add a course to the student and that 
+     * is the course the student is enrolled on.
+     */
+    public void enrolOnCourse()
+    (
+    
+    )
+    
+    /**
      * Print the student's name and ID number to the output terminal.
      */
     public void print()

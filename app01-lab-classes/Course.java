@@ -13,7 +13,8 @@ public class Course
     private String codeNo;
     
     /**
-     * 
+     * Constructor for objects of class Course
+     * stores the title and the code no
      */
     public Course(String title, String codeNo)
     {
