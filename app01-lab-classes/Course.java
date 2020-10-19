@@ -14,7 +14,7 @@ public class Course
     
     /**
      * Constructor for objects of class Course
-     * stores the title and the code no
+     * stores the title and the codeNo.
      */
     public Course(String title, String codeNo)
     {
