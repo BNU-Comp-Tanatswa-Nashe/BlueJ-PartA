@@ -26,7 +26,14 @@ public class Ticket
         this.destination = destination;
         this.price = price;
     } 
-    
+    /**
+     * Return the string for the ticket's destination
+     */
+    public String getDestination()
+    {
+        return destination;
+    }
+   
     /**
      * The print method will print out the ticket 
      */
