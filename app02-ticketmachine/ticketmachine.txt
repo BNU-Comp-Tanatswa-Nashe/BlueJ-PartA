@@ -1,0 +1,35 @@
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+Aylesbury
+Ticket ticket1 = new Ticket("ay", 220);
+ticket1.print();
+ay
+Ticket ticket2 = new Ticket("Aylesbury", 220);
+ticket2.print();
+Aylesbury
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+Aylesbury220
+Tue Oct 27 16:50:58 GMT 2020
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+ Ticket to Aylesbury cost 220p
+ Issued: Tue Oct 27 16:55:22 GMT 2020
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+ Ticket to Aylesbury cost 220p
+ Issued: Tue Oct 27 17:17:37 GMT 2020
+Ticket ticket1 = new Ticket("Amersham", 330);
+ticket1.print();
+ Ticket to Amersham cost 330p
+ Issued: Tue Oct 27 17:27:36 GMT 2020
+Ticket ticket1 = new Ticket("Amersham", 300);
+ticket1.print();
+ Ticket to Amersham cost 300p
+ Issued: Tue Oct 27 17:30:16 GMT 2020
+Ticket ticket1 = new Ticket("High Wycombe", 330);
+ticket1.print();
+ Ticket to High Wycombe cost 330p
+ Issued: Tue Oct 27 17:32:08 GMT 2020
