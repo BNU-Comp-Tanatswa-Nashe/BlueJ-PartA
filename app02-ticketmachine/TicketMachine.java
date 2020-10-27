@@ -33,9 +33,7 @@ public class TicketMachine
         balance = 0;
         total = 0;
         
-        aylesburyTicket = new Ticket("Aylesbury", 220);
         
-        issuedTicket = null;
     }
 
     /**
