@@ -26,6 +26,7 @@ public class Ticket
         this.destination = destination;
         this.price = price;
     } 
+    
     /**
      * Return the string for the ticket's destination
      */
@@ -34,6 +35,11 @@ public class Ticket
         return destination;
     }
    
+    public int getPrice()
+    {
+        return price; 
+    }
+  
     /**
      * The print method will print out the ticket 
      */
