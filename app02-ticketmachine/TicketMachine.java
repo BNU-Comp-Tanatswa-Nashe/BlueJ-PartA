@@ -22,7 +22,7 @@ public class TicketMachine
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine(int price)
+    public TicketMachine()
     {
        
         balance = 0;
@@ -111,8 +111,26 @@ public class TicketMachine
     public void insert10pence()
     {
         balance = balance + 10;
+        
     }
     
+    public void insert20pence()
+    {
+        balance = balance + 20;
+        
+    }
+    
+    public void insert100pence()
+    {
+        balance = balance + 100;
+        
+    }
+    
+    public void insert200pence()
+    {
+        balance = balance + 200;
+        
+    }
     
     
     /**

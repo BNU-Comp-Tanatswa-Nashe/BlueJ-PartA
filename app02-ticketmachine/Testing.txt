@@ -1,0 +1,44 @@
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insert10pence();
+ticketMa1.insert20pence();
+ticketMa1.insert100pence();
+ticketMa1.insert200pence();
+ticketMa1.printTicket();
+    Exception occurred.
+ticketMa1.selectAmershamTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+ Ticket to Amersham cost 330p
+ Issued: Sun Nov 01 16:06:29 GMT 2020
+# 330 pence.
+##################
+
+ticketMa1.selectAylesburyTicket();
+ticketMa1.printTicket();
+You must insert at least: 220 more cents.
+ticketMa1.selectHighWycombeTicket();
+ticketMa1.printTicket();
+You must insert at least: 300 more cents.
+ticketMa1.insertMoney(900);
+ticketMa1.selectHighWycombeTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+ Ticket to HighWycombe cost 300p
+ Issued: Sun Nov 01 16:06:29 GMT 2020
+# 300 pence.
+##################
+
+ticketMa1.selectAylesburyTicket();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+ Ticket to Aylesbury cost 220p
+ Issued: Sun Nov 01 16:06:29 GMT 2020
+# 220 pence.
+##################
+
