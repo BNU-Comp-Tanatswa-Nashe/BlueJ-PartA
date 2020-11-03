@@ -1,5 +1,7 @@
 /**
- * update the comment here. 
+ * The ticket machine includes the three tickets the user buy
+ * and this will be printed out. The machine can also refund
+ * the balance left over.
  * 
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
@@ -60,19 +62,33 @@ public class TicketMachine
         }
     }
 
+    /**
+     * The user has selected the Amersham Ticket
+     */
     public void selectAmershamTicket()
     {
         userTicket = amershamTicket;
     }
     
+    /**
+     * The user has bought the Aylesbury Ticket 
+     */
     public void selectAylesburyTicket()
     {
         userTicket = aylesburyTicket;
     }
     
+    /**
+     * The user has bought the High Wycombe Ticket
+     */
     public void selectHighWycombeTicket()
     {
         userTicket = highwycombeTicket;
+    }
+    
+    public void printBalance()
+    {
+       System.out.println("Balance = " + balance + " pence" ); 
     }
     
     /**
@@ -111,25 +127,29 @@ public class TicketMachine
     public void insert10pence()
     {
         balance = balance + 10;
-        
+        System.out.println("You have inserted 10 pence ");
+        printBalance();
     }
     
     public void insert20pence()
     {
         balance = balance + 20;
-        
+        System.out.println("You have inserted 20 pence ");
+        printBalance();
     }
     
     public void insert100pence()
     {
         balance = balance + 100;
-        
+        System.out.println("You have inserted 100 pence ");
+        printBalance();
     }
     
     public void insert200pence()
     {
         balance = balance + 200;
-        
+        System.out.println("You have inserted 200 pence ");
+        printBalance();
     }
     
     
