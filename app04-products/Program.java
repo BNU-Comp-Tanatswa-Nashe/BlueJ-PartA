@@ -2,8 +2,8 @@
 /**
  * Write a description of class Program here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Tanatswa-Nashe Rusike)
+ * @version (08/11/2020)
  */
 public class Program
 {
@@ -15,7 +15,8 @@ public class Program
      */
     public static void main()
     {
-        app = new StockApp();
-        app.run();
+        StockManager = new StockManager();
+        demo = new StockDemo(manager);
+        
     }
 }

@@ -109,7 +109,7 @@ public class StockManager
         System.out.println();
     }
     /**
-     * Method prints out all stock in the stock list.
+     * Method prints out all stock in the stock list with it's ID
      */
     public void PrintStock()
     {
