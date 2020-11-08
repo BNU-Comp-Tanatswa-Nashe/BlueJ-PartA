@@ -39,6 +39,11 @@ public class Module
         }
     }
     
+    public int getMark() 
+    {
+        return mark;
+    }
+    
     public void print ()
     {
         System.out.println("Module: " + codeNo +

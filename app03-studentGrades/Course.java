@@ -46,6 +46,18 @@ public class Course
         {
            module1.awardMark(mark);
         }
+        else if(moduleNo == 2)
+        {
+           module2.awardMark(mark);
+        }
+        else if(moduleNo == 3)
+        {
+           module3.awardMark(mark);
+        }
+        else if(moduleNo == 4)
+        {
+           module4.awardMark(mark);
+        }
   }
    
   /**
@@ -55,8 +67,30 @@ public class Course
   public void print()
   {
           System.out.println("Course: " + title + " " + codeNo);
+          
+          module1.print();
+          module2.print();
+          module3.print();
+          module4.print();
+          
+          System.out.println("Final Mark = " + finalMark);
+          System.out.println("Final Grade = " + finalGrade);
+          
   }
     
+  
+  public void calculateFinalMark()
+  {
+      finalMark = module1.getMark() 
+                + module2.getMark() 
+                + module3.getMark()
+                + module4.getMark();
+                
+      finalMark = finalMark/4;
+      finalGrade = convertToGrade(finalMark);
+    }
+  
+   
   /**
   * Marks have been added to each module of the course.
   */
@@ -66,52 +100,27 @@ public class Course
         {
             return Grades.F;
         }
-  }
-    
-  /**
-   * Marks added to a module of a course
-   */ 
-   public Grades convertToGrade(int mark)
-  {
-        if((mark >= 0) && (mark < 50))
+        else if((mark >= 40) && (mark < 50))
         {
             return Grades.D;
         }
-  }
-
-  /**
-   * Marks added to a module of a course
-   */
-  public Grades convertToGrade(int mark)
-  {
-        if((mark >= 0) && (mark < 60))
+        else if((mark >= 50) && (mark < 60))
         {
             return Grades.C;
         }
-  }
-
-  /**
-   * Marks added to a module of a course
-   */
-  public Grades convertToGrade(int mark)
-  {
-        if((mark >= 0) && (mark < 70))
+        else if((mark >= 60) && (mark < 70))
         {
             return Grades.B;
         }
-  }
-
-  
-  /**
-   * Marks added to a module of a course
-   */
-  public Grades convertToGrade(int mark)
-  {
-        if((mark >= 100) && (mark < 0))
-      {
+        else if((mark >= 70) && (mark <=100))
+        {
             return Grades.A;
-      }
-      
-      return Grades.X;
-  } 
+        }
+        
+        return Grades.X;
+  }
+    
+   
+   
+  
 }
