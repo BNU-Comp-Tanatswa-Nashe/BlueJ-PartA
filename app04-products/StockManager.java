@@ -3,9 +3,8 @@ import java.util.ArrayList;
 /**
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Tanatswa-Nashe Rusike
+ * @version (08/11/2020)
  */
 public class StockManager
 {
@@ -46,6 +45,14 @@ public class StockManager
      */
     public Product findProduct(int id)
     {
+        for(Product product : stock)
+        {
+            if(product.getID() == id)
+            {
+                return product;
+            }
+        }
+        
         return null;
     }
     
@@ -62,9 +69,55 @@ public class StockManager
     }
 
     /**
-     * Print details of all the products.
+     * The method will print details of each product. If found, the
+     * name and the stock quantity of the product will show.
+     * @param id The ID of the product to look for. 
      */
-    public void printProductDetails()
+    public void printProductDetails(int id)
     {
+        Product product = findProduct(id);
+        
+        if(product != null)
+        {
+            System.out.println(product.toString());
+        }
+    }
+    
+    /** 
+     * The method will print out the product in the stock in the order
+     * they are titled inside the stock list.
+     */
+    public void printAllProducts()
+    {
+        System.out.println();
+        System.out.println("Tanatswa's Stock List");
+        System.out.println("======================");
+        System.out.println();
+        
+        for(Product product : stock)
+        {
+            System.out.println(product);
+        }
+            
+        System.out.println();
+    } 
+    
+    public void printHeading()
+    {
+        System.out.println("Tanatswa's Stock List");
+        System.out.println("=======================");
+        System.out.println();
+    }
+    /**
+     * Method prints out all stock in the stock list.
+     */
+    public void PrintStock()
+    {
+        printHeading();
+        
+        for(Product product : stock)
+        {
+             System.out.println(product);
+        }
     }
 }

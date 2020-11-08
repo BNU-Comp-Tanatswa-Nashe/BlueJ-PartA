@@ -1,10 +1,10 @@
 /**
- * Demonstrate the StockManager and Product classes.
- * The demonstration becomes properly functional as
- * the StockManager class is completed.
- * 
+ * The code demonstrates the class of Stock Manager and Product class.
+ * The class will be functional as the coding for the class will be 
+ * complete.
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * Modified by Tanatswa-Nashe Rusike
  */
 public class StockDemo
 {
@@ -15,12 +15,20 @@ public class StockDemo
      * Create a StockManager and populate it with a few
      * sample products.
      */
-    public StockDemo()
+    public StockDemo(StockManager manager)
     {
-        manager = new StockManager();
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        this.manager = manager;
+        
+        manager.addProduct(new Product(132, "Nokia"));
+        manager.addProduct(new Product(37,  "Blackberry"));
+        manager.addProduct(new Product(23,  "Huawei"));
+        manager.addProduct(new Product(101, "Samsung Galaxy S20"));
+        manager.addProduct(new Product(32,  "Iphone 11 Pro Max"));
+        manager.addProduct(new Product(43,  "Iphone 6s"));
+        manager.addProduct(new Product(56,  "Iphone 6s Max"));
+        manager.addProduct(new Product(344, "Samsung Galazy S10")); 
+        manager.addProduct(new Product(121, "Iphone 5"));
+        manager.addProduct(new Product(890, "Iphone 10s Max"));
     }
     
     /**
@@ -31,10 +39,14 @@ public class StockDemo
     public void demo()
     {
         // Show details of all of the products.
-        manager.printProductDetails();
+        manager.printProductDetails(32);
+        
         // Take delivery of 5 items of one of the products.
-        manager.delivery(132, 5);
-        manager.printProductDetails();
+        manager.delivery(121, 5);
+        
+        manager.printProductDetails(890);
+        
+        
     }
     
     /**

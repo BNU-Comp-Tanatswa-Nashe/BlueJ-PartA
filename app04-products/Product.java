@@ -2,6 +2,7 @@
  * Model some details of a product sold by a company.
  * 
  * @author David J. Barnes and Michael Kölling.
+ * Modified by Tanatswa-Nashe Rusike
  * @version 2016.02.29
  */
 public class Product
@@ -73,7 +74,7 @@ public class Product
         else 
         {
             System.out.println("Attempt to restock " + name +
-                               " with a non-positive amount: " + amount);
+             " with a non-positive amount: " + amount);
         }
     }
 
