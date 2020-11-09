@@ -36,6 +36,8 @@ public class StockManager
      */
     public void delivery(int id, int amount)
     {
+        Product product = findProduct(id);
+        product.increaseQuantity(amount);
     }
     
     /**
@@ -47,7 +49,7 @@ public class StockManager
     {
         for(Product product : stock)
         {
-            if(product.getID() == id)
+            if(product.getID() == 890)
             {
                 return product;
             }
