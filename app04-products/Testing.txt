@@ -1,0 +1,199 @@
+132: Nokia stock level: 0
+37: Blackberry stock level: 0
+23: Huawei stock level: 0
+101: Samsung Galaxy S20 stock level: 0
+32: Iphone 11 Pro Max stock level: 0
+43: Iphone 6s stock level: 0
+56: Iphone 6s Max stock level: 0
+344: Samsung Galazy S10 stock level: 0
+121: Iphone 5 stock level: 0
+890: Iphone 10s Max stock level: 0
+
+Product Delivered : 132: Nokia stock level: 1
+Product Delivered : 37: Blackberry stock level: 2
+Product Delivered : 23: Huawei stock level: 2
+Product Delivered : 101: Samsung Galaxy S20 stock level: 4
+Product Delivered : 32: Iphone 11 Pro Max stock level: 5
+Product Delivered : 43: Iphone 6s stock level: 7
+Product Delivered : 56: Iphone 6s Max stock level: 9
+Product Delivered : 344: Samsung Galazy S10 stock level: 6
+Product Delivered : 121: Iphone 5 stock level: 3
+Product Delivered : 890: Iphone 10s Max stock level: 5
+
+Tanatswa's Stock List
+======================
+
+132: Nokia stock level: 1
+37: Blackberry stock level: 2
+23: Huawei stock level: 2
+101: Samsung Galaxy S20 stock level: 4
+32: Iphone 11 Pro Max stock level: 5
+43: Iphone 6s stock level: 7
+56: Iphone 6s Max stock level: 9
+344: Samsung Galazy S10 stock level: 6
+121: Iphone 5 stock level: 3
+890: Iphone 10s Max stock level: 5
+
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+stockDem1.sellProduct(132);
+344: Samsung Galazy S10 stock level: 0
+Attempt to sell an out of stock item: Samsung Galazy S10
+344: Samsung Galazy S10 stock level: 0
+manager.PrintStock();
+Tanatswa's Stock List
+=======================
+
+132: Nokia stock level: 0
+37: Blackberry stock level: 0
+23: Huawei stock level: 0
+101: Samsung Galaxy S20 stock level: 0
+32: Iphone 11 Pro Max stock level: 0
+43: Iphone 6s stock level: 0
+56: Iphone 6s Max stock level: 0
+344: Samsung Galazy S10 stock level: 0
+121: Iphone 5 stock level: 0
+890: Iphone 10s Max stock level: 0
+stockDem1.sellProduct(132);
+344: Samsung Galazy S10 stock level: 0
+Attempt to sell an out of stock item: Samsung Galazy S10
+344: Samsung Galazy S10 stock level: 0
+stockDem1.demoDelivery();
+
+Tanatswa's Stock List
+======================
+
+132: Nokia stock level: 0
+37: Blackberry stock level: 0
+23: Huawei stock level: 0
+101: Samsung Galaxy S20 stock level: 0
+32: Iphone 11 Pro Max stock level: 0
+43: Iphone 6s stock level: 0
+56: Iphone 6s Max stock level: 0
+344: Samsung Galazy S10 stock level: 0
+121: Iphone 5 stock level: 0
+890: Iphone 10s Max stock level: 0
+
+Product Delivered : 344: Samsung Galazy S10 stock level: 1
+Product Delivered : 344: Samsung Galazy S10 stock level: 3
+Product Delivered : 344: Samsung Galazy S10 stock level: 5
+Product Delivered : 344: Samsung Galazy S10 stock level: 9
+Product Delivered : 344: Samsung Galazy S10 stock level: 14
+Product Delivered : 344: Samsung Galazy S10 stock level: 21
+Product Delivered : 344: Samsung Galazy S10 stock level: 30
+Product Delivered : 344: Samsung Galazy S10 stock level: 36
+Product Delivered : 344: Samsung Galazy S10 stock level: 39
+Product Delivered : 344: Samsung Galazy S10 stock level: 44
+
+Tanatswa's Stock List
+======================
+
+132: Nokia stock level: 0
+37: Blackberry stock level: 0
+23: Huawei stock level: 0
+101: Samsung Galaxy S20 stock level: 0
+32: Iphone 11 Pro Max stock level: 0
+43: Iphone 6s stock level: 0
+56: Iphone 6s Max stock level: 0
+344: Samsung Galazy S10 stock level: 44
+121: Iphone 5 stock level: 0
+890: Iphone 10s Max stock level: 0
+
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+stockDem1.sellProduct(132);
+344: Samsung Galazy S10 stock level: 0
+Attempt to sell an out of stock item: Samsung Galazy S10
+344: Samsung Galazy S10 stock level: 0
+manager.PrintStock();
+Tanatswa's Stock List
+=======================
+
+132: Nokia stock level: 0
+37: Blackberry stock level: 0
+23: Huawei stock level: 0
+101: Samsung Galaxy S20 stock level: 0
+32: Iphone 11 Pro Max stock level: 0
+43: Iphone 6s stock level: 0
+56: Iphone 6s Max stock level: 0
+344: Samsung Galazy S10 stock level: 0
+121: Iphone 5 stock level: 0
+890: Iphone 10s Max stock level: 0
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+stockDem1.sellProduct(132);
+344: Samsung Galazy S10 stock level: 0
+Attempt to sell an out of stock item: Samsung Galazy S10
+344: Samsung Galazy S10 stock level: 0
+manager.PrintStock();
+Tanatswa's Stock List
+=======================
+
+132: Nokia stock level: 0
+37: Blackberry stock level: 0
+23: Huawei stock level: 0
+101: Samsung Galaxy S20 stock level: 0
+32: Iphone 11 Pro Max stock level: 0
+43: Iphone 6s stock level: 0
+56: Iphone 6s Max stock level: 0
+344: Samsung Galazy S10 stock level: 0
+121: Iphone 5 stock level: 0
+890: Iphone 10s Max stock level: 0
+StockManager manager = new StockManager();
+Product product1 = new Product(132, "Nokia");
+product1.sellOne(2);
+Attempt to sell an out of stock item: Nokia
+manager.PrintStock();
+Tanatswa's Stock List
+=======================
+
+StockManager manager = new StockManager();
+Product product1 = new Product(132, "Nokia");
+product1.sellOne(2);
+manager.PrintStock();
+Tanatswa's Stock List
+=======================
+
+StockManager manager = new StockManager();
+Product product1 = new Product(132, "Nokia");
+product1.sellOne(2);
+manager.PrintStock();
+Tanatswa's Stock List
+=======================
+
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+stockDem1.demosellProduct(132);
+344: Samsung Galazy S10 stock level: 0
+Attempt to sell an out of stock item: Samsung Galazy S10
+344: Samsung Galazy S10 stock level: 0
+StockManager man = new StockManager();
+StockDemo stockDem1 = new StockDemo(man);
+stockDem1.demosellProduct(132);
+132: Nokia stock level: 0
+Attempt to sell an out of stock item: Nokia
+132: Nokia stock level: 0
+man.PrintStock();
+Tanatswa's Stock List
+=======================
+
+132: Nokia stock level: 0
+37: Blackberry stock level: 0
+23: Huawei stock level: 0
+101: Samsung Galaxy S20 stock level: 0
+32: Iphone 11 Pro Max stock level: 0
+43: Iphone 6s stock level: 0
+56: Iphone 6s Max stock level: 0
+344: Samsung Galazy S10 stock level: 0
+121: Iphone 5 stock level: 0
+890: Iphone 10s Max stock level: 0
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+stockDem1.demosellProduct(132);
+132: Nokia stock level: 0
+Attempt to sell an out of stock item: Nokia
+132: Nokia stock level: 0
+manager.printProductDetails(132);
+132: Nokia stock level: 0
