@@ -79,16 +79,22 @@ public class Product
     }
 
     /**
-     * Sell one of these products.
-     * An error is reported if there appears to be no stock.
+     * This method sells one of these products.
+     * If there is no stock, an error will be reported.
      */
-    public void sellOne()
+    public void sellOne(int amount)
     {
-        if(quantity > 0) 
+        if(quantity >= amount && quantity > 0) 
         {
-            quantity--;
+            quantity-= amount;
+            System.out.println("Sold " + amount + " of " + name);
         }
-        else 
+        else if(amount > quantity && quantity > 0)
+        {
+            System.out.println("Insufficient Stock " + quantity + "amount ordered = " + amount);
+            quantity = 0;
+        }
+        else
         {
             System.out.println(
                 "Attempt to sell an out of stock item: " + name);

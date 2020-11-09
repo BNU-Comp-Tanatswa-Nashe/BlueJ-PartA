@@ -81,13 +81,13 @@ public class StockDemo
         if(product != null) 
         {
             showDetails(id);
-            product.sellOne();
+            product.sellOne(id);
             showDetails(id);
         }
     }
     
     /**
-     * A product with correct ID must be given from the manager.
+     * A product with correct ID must be given from the manager
      * An error message is printed if there is no match with the ID.
      * @param id The ID of the product.
      * @return The Product, or null if no matching one is found.
