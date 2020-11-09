@@ -29,20 +29,24 @@ public class StockManager
     }
     
     /**
-     * Receive a delivery of a given product.
+     * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
      * @param id The ID of the product.
      * @param amount The amount to increase the quantity by.
      */
     public void delivery(int id, int amount)
-{
-    Product product = findProduct(id);
-    if(product != null)
     {
-        product.increaseQuantity(amount);
+    Product product = findProduct(id);
+       if(product != null)
+       {
+            product.increaseQuantity(amount);
         System.out.println("Product Delivered : " + product);
+       }
+       else
+       {
+        System.out.println("Product ID" + id + " NOT FOUND!!!");
     }
-}
+    }   
     
     /**
      * Try to find a product in the stock with the given id.
@@ -114,8 +118,9 @@ public class StockManager
         System.out.println("=======================");
         System.out.println();
     }
+    
     /**
-     * Method prints out all stock in the stock list with it's given ID.
+     * Method prints out all stock in the stock list with it's ID
      */
     public void PrintStock()
     {

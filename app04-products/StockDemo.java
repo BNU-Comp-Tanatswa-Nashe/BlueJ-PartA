@@ -74,7 +74,7 @@ public class StockDemo
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int id)
+    public void demosellProduct(int id)
     {
         Product product = getProduct(id);
         

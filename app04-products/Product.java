@@ -84,17 +84,12 @@ public class Product
      */
     public void sellOne(int amount)
     {
-        if(quantity >= amount && quantity > 0) 
+        if(quantity > 0) 
         {
             quantity-= amount;
             System.out.println("Sold " + amount + " of " + name);
         }
-        else if(amount > quantity && quantity > 0)
-        {
-            System.out.println("Insufficient Stock " + quantity + "amount ordered = " + amount);
-            quantity = 0;
-        }
-        else
+        else 
         {
             System.out.println(
                 "Attempt to sell an out of stock item: " + name);
