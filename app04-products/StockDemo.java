@@ -12,8 +12,8 @@ public class StockDemo
     private StockManager manager;
 
     /**
-     * Create a StockManager and populate it with a few
-     * sample products.
+     * A StockManager class with 10 products of stock.
+     * 
      */
     public StockDemo(StockManager manager)
     {
@@ -32,26 +32,31 @@ public class StockDemo
     }
     
     /**
-     * Provide a very simple demonstration of how a StockManager
-     * might be used. Details of one product are shown, the
-     * product is restocked, and then the details are shown again.
+     * Details of the product are shown and the products are restocked 
+     * and then the details are shown again.
      */
-    public void demo()
+    public void demoDelivery()
     {
         // Show details of all of the products.
-        manager.printProductDetails(32);
-        
+        manager.printAllProducts();
         // Take delivery of 5 items of one of the products.
-        manager.delivery(121, 5);
+        manager.delivery(132, 1);
+        manager.delivery(37, 2);
+        manager.delivery(23, 2);
+        manager.delivery(101, 4);
+        manager.delivery(32, 5);
+        manager.delivery(43, 7);
+        manager.delivery(56, 9);
+        manager.delivery(344, 6);
+        manager.delivery(121,3);
+        manager.delivery(890, 5);
         
-        manager.printProductDetails(890);
-        
-        
+        manager.printAllProducts();
     }
     
     /**
-     * Show details of the given product. If found,
-     * its name and stock quantity will be shown.
+     * Details of a given product will be shown here. When the product,
+     * its name and stock quantity will be shown here.
      * @param id The ID of the product to look for.
      */
     public void showDetails(int id)
@@ -82,8 +87,8 @@ public class StockDemo
     }
     
     /**
-     * Get the product with the given id from the manager.
-     * An error message is printed if there is no match.
+     * A product with correct ID must be given from the manager.
+     * An error message is printed if there is no match with the ID.
      * @param id The ID of the product.
      * @return The Product, or null if no matching one is found.
      */
