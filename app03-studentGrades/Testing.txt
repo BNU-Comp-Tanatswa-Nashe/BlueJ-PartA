@@ -1,0 +1,14 @@
+Course course1 = new Course("G400", "computing");
+course1.addMark(50, 1);
+course1.addMark(60, 2);
+course1.addMark(50, 3);
+course1.addMark(60, 4);
+course1.calculateFinalMark();
+course1.print();
+Course: G400 computing
+Module: CO452  Programming Concepts Mark = 50
+Module: BM414  Financial Decion Making Mark = 60
+Module: MG413  Data Insight for Business Mark = 50
+Module: CO454  Digital Technologies Mark = 60
+Final Mark = 55
+Final Grade = C
