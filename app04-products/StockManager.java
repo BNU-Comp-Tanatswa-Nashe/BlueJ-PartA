@@ -38,6 +38,7 @@ public class StockManager
     {
         Product product = findProduct(id);
         product.increaseQuantity(amount);
+        System.out.println("Product Delivered : " + product);
     }
     
     /**
@@ -49,7 +50,7 @@ public class StockManager
     {
         for(Product product : stock)
         {
-            if(product.getID() == 890)
+            if(product.getID() == id)
             {
                 return product;
             }
