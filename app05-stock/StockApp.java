@@ -12,12 +12,18 @@ public class StockApp
     // Use to get user input
     private InputReader input;
     
+    private StockManager manager;
+    
+    private StockDemo demo;
+    
     /**
      * Constructor for objects of class StockApp
      */
     public StockApp()
     {
         input = new InputReader();
+        manager = new StockManager();
+        demo = new StockDemo(manager);
     }
 
     /**
@@ -26,29 +32,56 @@ public class StockApp
      */
     public void run()
     {
-        printHeading();
-        getMenuChoice();
-    }
-    
-    /**
-     * The menu includes user input of choices of products they choose and 
-     * prints them.
-     */
-    public void getMenuChoice()
-    {
-        boolean finished = false;
+      boolean finished = false;
         
         while(!finished)
         {
-            printHeading();
             printMenuChoices();
            
-            String choice = input.getInput();
-            finished = true;
+            String choice = input.getString("Please enter your choice");
+            choice = choice.toLowerCase();
+            
+            if(choice.equals("quit"))
+               finished = true; 
+            else 
+                executeMenuChoice(choice);
         }
     }
     
-   
+    /**
+     * The String choice will allow execution of choices from user input. The user can
+     * select a product they want to add.
+     */
+    public void executeMenuChoice(String choice)
+    {
+        if(choice.equals("add"))
+        {
+           addProduct();
+        }
+        else if (choice.equals("printall"))
+        {
+            manager.printAllProducts();
+        }
+    }
+    
+    public void addProduct()
+    {
+        int id = input.getInt("Please enter the product Id");
+        String name = input.getString("Please enter the product name");
+        
+        Product product = new Product(id, "Name");
+        manager. addProduct(product);
+    }
+    
+     public void removeProduct()
+    {
+        int id = input.getInt("Please enter the product Id");
+        
+        
+       
+        // manager. removeProduct(id);
+    }
+    
     /**
      * Print out a menu of operation choices
      */
@@ -69,7 +102,7 @@ public class StockApp
     {
         System.out.println("******************************");
         System.out.println(" Stock Management Application ");
-        System.out.println("    App05: by Student Name");
+        System.out.println("    App05: by Tanatswa-Nashe Rusike");
         System.out.println("******************************");
     }
 }
