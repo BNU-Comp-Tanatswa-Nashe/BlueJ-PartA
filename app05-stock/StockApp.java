@@ -1,10 +1,10 @@
 
 /**
- * This app provides a user interface to the
- * stock manager so that users can add, edit,
- * print and remove stock products
+ * The Stock App will provide a user interface to the
+ * stock manager. This will allow users to be in control to add, edit,
+ * print and remove any stock products they choose. 
  *
- * @author Student Name
+ * @author Tanatswa-Nashe Rusike
  * @version 0.1
  */
 public class StockApp
@@ -21,7 +21,8 @@ public class StockApp
     }
 
     /**
-     * 
+     * The run method prints out the heading and it will allow users to 
+     * choose from the menu.
      */
     public void run()
     {
@@ -30,7 +31,8 @@ public class StockApp
     }
     
     /**
-     * 
+     * The menu includes user input of choices of products they choose and 
+     * prints them.
      */
     public void getMenuChoice()
     {
